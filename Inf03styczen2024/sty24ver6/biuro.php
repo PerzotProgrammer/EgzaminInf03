@@ -30,7 +30,7 @@
     <div id="center">
         <h2>W tym roku jedziemy do...</h2>
         <?php
-            $con = mysqli_connect("localhost", "root", "", "bazainf03sty24v6");
+            $con = mysqli_connect("localhost", "root", "", "podroze");
             $query = "select nazwaPliku, podpis from zdjecia order by podpis;";
             $result = mysqli_query($con, $query);
             while ($row = mysqli_fetch_array($result)) {
