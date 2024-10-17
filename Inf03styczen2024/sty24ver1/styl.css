@@ -1,0 +1,57 @@
+* {
+    background-color: #DDDDDD;
+    font-family: Helvetica;
+}
+
+#view {
+    width: 90%;
+    margin: auto;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#logo, #menu {
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#banner {
+    background-color: #DDDDDD;
+    height: 200px;
+}
+
+#main {
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+
+#footer {
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.button {
+    background-color: lightblue;
+    color: navy;
+}
+
+
+a {
+    color: navy;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+a:hover {
+    border: 1px solid navy;
+}
