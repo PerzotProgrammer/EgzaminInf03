@@ -1,5 +1,5 @@
-* {
-    background-color: #DDDDDD;
+body {
+    background-color: #EEEEEE;
     font-family: Helvetica;
 }
 
@@ -37,7 +37,7 @@
     padding: 10px;
 }
 
-.button {
+input[type="button"] {
     background-color: lightblue;
     color: navy;
 }
