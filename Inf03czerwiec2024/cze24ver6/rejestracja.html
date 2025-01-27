@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="setDefaultStateOfForms()">
+    <div id="banner">
+        <h1>Formularz rejestracyjny konferencji <i>Nasze kwiaty</i></h1>
+    </div>
+    <div id="main">
+        <div class="forms" id="f1">
+            <h2>Dane osobowe</h2>
+            <input type="text" placeholder="Wpisz imię..." required id="fName">
+            <br>
+            <input type="text" placeholder="Wpisz nazwisko..." required id="sName">
+            <br>
+            <input type="button" value="Następna karta" onclick="validateForm1()">
+        </div>
+        <div class="forms" id="f2">
+            <h2>Dane kontaktowe</h2>
+            <input type="email" placeholder="Twój e-mail...">
+            <br>
+            <input type="tel" placeholder="Twój numer telefonu...">
+            <br>
+            <input type="button" value="Następna karta" onclick="validateForm2()">
+        </div>
+        <div class="forms" id="f3">
+            <h2>Hasło do logowania</h2>
+            <input type="password" placeholder="Podaj hasło..." id="passwd1">
+            <br>
+            <input type="password" placeholder="Powtórz hasło..." id="passwd2">
+            <br>
+            <input type="button" value="Zatwierdź" onclick="validateForm3()">
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerBlocks">
+            <video src="motyl.mp4" controls>
+                Przeglądarka nie obsługuje tego formatu
+            </video>
+        </div>
+        <div class="footerBlocks">
+            <h3>Plan konferencji</h3>
+            <table>
+                <tr>
+                    <td>9:00 - 12:00</td>
+                    <td>Pielęgnacja roślin</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Targi kwiatowe</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footerBlocks">
+            <p><a href="https://kwiaty.pl">Internetowa kwiaciarnia</a></p>
+        </div>
+        <div class="footerBlocks">
+            <p>Formularz wykonał: XYZ</p>
+        </div>
+    </div>
+</body>
+
+</html>
