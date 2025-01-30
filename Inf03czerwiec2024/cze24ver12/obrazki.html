@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js" defer></script>
+</head>
+
+<body>
+    <div id="banner">
+        <h2>Efekty na obrazach</h2>
+    </div>
+    <div class="wrap">
+        <div class="imgBlock">
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="imgBee"><br>
+            <input type="radio" id="rBlur" name="radioBee">
+            <label for="rBlur">Blur</label><br>
+            <input type="radio" id="rSepia" name="radioBee">
+            <label for="rSepia">Sepia</label><br>
+            <input type="radio" id="rNegative" name="radioBee">
+            <label for="rNegative">Negatyw</label><br>
+            <input type="button" value="Zastosuj" onclick="modifyBee()">
+        </div>
+        <div class="imgBlock">
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="imgOrange"><br>
+            <input type="button" value="Kolorowy" onclick="modifyOrange(false)">
+            <input type="button" value="Czarno-biały" onclick="modifyOrange(true)">
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="imgBlock">
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="imgFruits"><br>
+            <input type="range" min="0" max="100" value="100" id="fruitsModifier">
+            <input type="button" value="Zastosuj" onclick="modifyFruits()">
+        </div>
+        <div class="imgBlock">
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="imgTurtle"><br>
+            <input type="range" min="0" max="250" id="turtleModifier">
+            <input type="button" value="Zastosuj" onclick="modifyTurtle()">
+        </div>
+    </div>
+
+    <div id="footer">
+        <p><a href="https://www.css.com" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: XYZ</p>
+    </div>
+</body>
+
+</html>
