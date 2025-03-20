@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salon kosmetyczny</title>
+    <link rel="stylesheet" href="styl7.css">
+    <script src="skrypt.js" defer></script>
+</head>
+
+<body>
+    <main id="main">
+        <section id="left">
+            <section id="lUpper">
+                <h2>Nasza oferta</h2>
+                <ol>
+                    <li><a href="twarz.html">Oczyszczanie twarzy</a>
+                        <ul>
+                            <li>Peeling</li>
+                            <li>Maska</li>
+                        </ul>
+                    </li>
+                    <li>Masaż</li>
+                    <li>Makijaż</li>
+                </ol>
+                <a href="index.html">Strona główna</a>
+            </section>
+            <section id="lLower">
+                <img src="obraz1.jpg" alt="Personel">
+            </section>
+        </section>
+        <section id="right">
+            <section id="rUpper">
+                <h1>Usługi kosmetyczne</h1>
+            </section>
+            <section id="rLower">
+                <h3>Kalkulator ceny wizyty</h3>
+                <input type="checkbox" id="peeling"> <label for="peeling">Peeling</label> <br>
+                <input type="checkbox" id="maska"> <label for="maska">Maska</label> <br>
+                <input type="checkbox" id="masaz"> <label for="masaz">Masaż twarzy</label> <br>
+                <input type="checkbox" id="makijaz"> <label for="makijaz">Makijaż</label> <br>
+                <input type="button" value="Oblicz cenę" onclick="calculatePrice()">
+                <p id="output"></p>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Autor: XYZ</p>
+    </footer>
+</body>
+
+</html>
