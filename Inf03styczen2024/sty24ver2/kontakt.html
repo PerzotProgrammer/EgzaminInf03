@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="skrypt.js" defer></script>
+</head>
+
+<body>
+    <main id="main">
+        <header id="banner">
+            <img src="animacja.gif" alt="Pogotowie komputerowe">
+        </header>
+        <section id="menu">
+            <a href="index.html">Strona główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </section>
+        <section id="blocks">
+            <section id="left"></section>
+            <section id="center">
+                <h2>Kontakt</h2>
+                <table>
+                    <tr><td>Imię: </td><td><input type="text" id="fName"></td></tr>
+                    <tr><td>Nazwisko: </td><td><input type="text" id="sName"></td></tr>
+                    <tr><td>Email: </td><td><input type="email" id="email"></td></tr>
+                    <tr><td>Zgłoszenie: </td><td>
+                        <select name="report" id="report">
+                            <option value="naprawa komputerów">naprawa komputerów</option>
+                            <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                            <option value="wirusy">wirusy</option>
+                            <option value="konfiguracja LAN">konfiguracja LAN</option>
+                        </select>
+                    </td></tr>
+                    <tr><td></td><td><input type="checkbox" checked id="sendCopy"><label for="sendCopy">Wyślij kopię wiadomości</label></td></tr>
+                    <tr><td></td><td><input type="button" value="Czyść" onclick="clearForm()"> <input type="button" value="Wyślij" onclick="sendForm()"></td></tr>
+                </table>
+                <hr>
+                <p id="output"></p>
+            </section>
+            <section id="right"></section>
+        </section>
+        <footer id="footer">
+            <p>Autor: <i>XYZ</i></p>
+        </footer>
+    </main>
+</body>
+
+</html>

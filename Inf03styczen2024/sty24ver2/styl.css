@@ -1,0 +1,56 @@
+body {
+    background-color: #E0F7FA;
+    font-family: Arial;
+    text-align: center;
+}
+
+#main {
+    width: 95%;
+    margin: auto;
+}
+
+#banner {
+    background-color: #00838F;
+    height: 200px;
+}
+
+#menu {
+    background-color: #006064;
+    padding: 15px;
+}
+
+#menu>a {
+    color: white;
+    text-decoration: none;
+    size: 150%;
+}
+
+#blocks {
+    display: flex;
+}
+
+#left,
+#center,
+#right {
+    height: 350px;
+    width: 33%;
+}
+
+#footer {
+    background-color: #006064;
+    text-align: right;
+    padding: 10px;
+}
+
+ul {
+    text-align: left;
+}
+
+input[type="button"] {
+    background-color: #00838F;
+    color: white;
+}
+
+input[type="button"]:hover {
+    color: #80DEEA;
+}
