@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js" defer></script>
+</head>
+
+<body>
+    <aside id="left">
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdź promocje</h2>
+        <table>
+            <tr>
+                <th>co?</th>
+                <th>ile taniej?</th>
+            </tr>
+            <tr>
+                <td>ubrania</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>buty</td>
+                <td>25%</td>
+            </tr>
+        </table>
+    </aside>
+    <header id="banner">
+        <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main id="main">
+        <input type="button" value="Klient" onclick="showBlock(0)">
+        <input type="button" value="Adres" onclick="showBlock(1)">
+        <input type="button" value="Kontakt" onclick="showBlock(2)">
+        <br>
+        <section id="block1">
+            <p>Imię</p><input type="text" placeholder="Wpisz dane..." onfocusout="makeProgress()" id="fName"><br>
+            <p>Nazwisko</p><input type="text" onfocusout="makeProgress()" id="sName"><br>
+            <p>Data urodzenia</p><input type="date" onfocusout="makeProgress()" id="birthDate"><br>
+        </section>
+        <section id="block2">
+            <p>Ulica</p><input type="text" onfocusout="makeProgress()" id="street"><br>
+            <p>Numer</p><input type="number" onfocusout="makeProgress()" id="homeNumber"><br>
+            <p>Miasto</p><input type="text" onfocusout="makeProgress()" id="city"><br>
+        </section>
+        <section id="block3">
+            <p>Numer komórkowy</p><input type="tel" onfocusout="makeProgress()" id="phoneNumber"><br>
+            <label><input type="checkbox" id="rodoCheckbox"> Akceptuję RODO</label><br>
+            <input type="button" value="Zatwierdź dane" onclick="onAccept()">
+        </section>
+    </main>
+    <section id="progress">
+        <section id="progressBar"></section>
+    </section>
+    <footer id="footer">
+        <h4>Rejestrację do sklepu wykonał: XYZ</h4>
+    </footer>
+</body>
+
+</html>
