@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fryzjerstwo</title>
+    <link rel="stylesheet" href="styl8.css">
+    <script src="skrypt.js" defer></script>
+</head>
+
+<body>
+    <section id="upperLeft" class="left">
+        <h1><a href="./index.html">SALON FRYZJERSKI</a></h1>
+    </section>
+    <section id="upperRight" class="right">
+        <h4><a href="./fryzura.html">Ceny strzyżenia</a></h4>
+        <table>
+            <tr><th>Długość włosów</th><th>Cena</th></tr>
+            <tr><td>Krótkie</td><td>25</td></tr>
+            <tr><td>Średnie</td><td>30</td></tr>
+            <tr><td>Półdługie</td><td>40</td></tr>
+            <tr><td>Długie</td><td>50</td></tr>
+        </table>
+    </section>
+    <section id="middleLeft" class="left">
+        <h2>PROMOCJA!</h2>
+        <input type="radio" name="discount" id="radio1"><label for="radio1">Krótkie</label><br>
+        <input type="radio" name="discount" id="radio2"><label for="radio2">Średnie</label><br>
+        <input type="radio" name="discount" id="radio3"><label for="radio3">Półdługie</label><br>
+        <input type="radio" name="discount" id="radio4"><label for="radio4">Długie</label><br>
+        <input type="button" value="Odkryj promocję" onclick="calculateDiscount()"><br>
+        <p id="output"></p>
+    </section>
+    <section id="lowerRight" class="right">
+        <img src="obraz1.jpg" alt="Fryzjerka">
+    </section>
+    <section id="lowerLeft" class="left">
+        <p>Witaj! Miło nam, że odwiedziłeś nasz salon. Sprawdź promocje!</p>
+        <h4>Kontakt: 444 555 666</h4>
+    </section>
+    <footer id="footer">
+        <p>Autor: XYZ</p>
+    </footer>
+</body>
+
+</html>
